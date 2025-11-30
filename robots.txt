@@ -1,4 +1,4 @@
 User-agent: *
 Allow: /
 
-Sitemap: https://auto-car-tau.vercel.app/sitemap.xml
+Sitemap: https://tooncarpaint.online/sitemap.xml

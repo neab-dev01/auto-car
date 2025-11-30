@@ -169,26 +169,115 @@ body {
     background: #555;
 }
 
-/* Responsive Adjustments */
-@media (max-width: 768px) {
-    .hero-section h1 {
-        font-size: 2.5rem;
-    }
-
-    .process-step {
-        margin-bottom: 2rem;
-    }
-}
-
-
 .stoke-text-blue {
     -webkit-text-stroke: 1px #ffffff;
 }
 
 footer{
-        border-top: 1px solid #0D6EFD;
+    border-top: 1px solid #0D6EFD;
 }
 
 .hover-qrline:hover{
     opacity: 0.5;
+}
+
+.hover-text-blue:hover{
+    color: #0D6EFD !important;
+}
+
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+    /* Typography Adjustments */
+    .hero-section h2.display-3 {
+        font-size: 1.8rem;
+        font-weight: 700;
+    }
+
+    .hero-section h1.lead {
+        font-size: 1.1rem;
+    }
+
+    h2 {
+        font-size: 1.75rem;
+    }
+
+    h4 {
+        font-size: 1.3rem;
+    }
+
+    /* Navbar */
+    .navbar-brand {
+        font-size: 1.2rem;
+    }
+    
+    .navbar-brand img {
+        height: 35px !important;
+    }
+
+    /* Hero Section Layout */
+    .hero-section {
+        height: auto;
+        min-height: 100vh;
+        padding-top: 100px;
+        padding-bottom: 60px;
+        text-align: center;
+    }
+
+    .hero-section .d-flex.gap-3 {
+        flex-direction: column;
+        width: 100%;
+        padding-top: 40px !important;
+    }
+
+    .hero-section .btn-lg {
+        width: 100%;
+        font-size: 1rem;
+        padding: 7px 0;
+    }
+
+    /* Adjust QR Code section in Hero */
+    .hero-section .bg-white.p-2 {
+        margin-top: 2rem;
+        max-width: 200px; /* Smaller QR container on mobile */
+    }
+    .qr-line-img{
+        max-width: 175px !important;
+    }   
+
+    /* General Section Spacing */
+    section {
+        padding-top: 3rem !important;
+        padding-bottom: 3rem !important;
+    }
+
+    /* Process Steps */
+    .process-step {
+        margin-bottom: 2.5rem;
+    }
+    
+    .process-step::after {
+        display: none;
+    }
+
+    /* Pricing Table */
+    .table th, .table td {
+        padding: 0.75rem 0.5rem;
+        font-size: 0.9rem;
+    }
+
+    /* Contact Section */
+    .icon-box {
+        width: 40px;
+        height: 40px;
+        padding: 8px !important;
+    }
+    
+    .icon-box i {
+        font-size: 1.5rem;
+    }
+
+    /* Footer spacing for fixed bottom nav */
+    footer {
+        padding-bottom: 80px;
+    }
 }
