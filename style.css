@@ -403,14 +403,14 @@ footer{
     }
     
     .navbar-brand img {
-        height: 35px !important;
+        height: 40px !important;
     }
 
     /* Hero Section Layout */
     .hero-section {
         height: auto;
         min-height: 100vh;
-        padding-top: 100px;
+        padding-top: 0px;
         padding-bottom: 60px;
         text-align: center;
     }
