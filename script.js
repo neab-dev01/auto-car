@@ -102,3 +102,16 @@ const swiper = new Swiper(".brand-carousel", {
         },
     },
 });
+
+// Preloader
+window.addEventListener('load', function() {
+    const preloader = document.getElementById('preloader');
+    if (preloader) {
+        setTimeout(function() {
+            preloader.classList.add('fade-out');
+            setTimeout(() => {
+                preloader.style.display = 'none';
+            }, 500); 
+        }, 800); // Minimum display time of 0.8s for branding
+    }
+});
